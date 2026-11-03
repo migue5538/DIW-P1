@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraPlay | Personaje</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina">
+  <header class="barra-superior">
+    <a class="barra-superior__logo" href="lobby.html">AuraPlay</a>
+    <div class="barra-superior__usuario">
+      <span>Aura: 1.000</span>
+      <span class="barra-superior__avatar">J</span>
+    </div>
+  </header>
+
+  <nav class="navegacion">
+    <a class="navegacion__enlace" href="lobby.html">Lobby</a>
+    <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+    <a class="navegacion__enlace navegacion__enlace--activo" href="personaje.html">Personaje</a>
+    <a class="navegacion__enlace" href="configuracion.html">Configuración</a>
+  </nav>
+
+  <main class="pagina__contenido">
+    <section class="personaje__actual">
+      <h1>Tu personaje</h1>
+      <div class="personaje__vista">Personaje actual</div>
+      <p>Aspecto equipado: Clásico</p>
+    </section>
+
+    <h2>Artículos comprados</h2>
+    <div class="inventario__lista">
+      <div class="objeto">
+        <h3>Gorra de explorador</h3>
+        <p>Equipado</p>
+        <button class="boton" type="button" disabled>Equipado</button>
+      </div>
+      <div class="objeto">
+        <h3>Sudadera violeta</h3>
+        <p>Disponible</p>
+        <button class="boton boton--principal" type="button">Equipar</button>
+      </div>
+      <div class="objeto">
+        <h3>Zapatillas nube</h3>
+        <p>Disponible</p>
+        <button class="boton boton--principal" type="button">Equipar</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

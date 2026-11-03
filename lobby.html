@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraPlay | Lobby</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina">
+  <header class="barra-superior">
+    <a class="barra-superior__logo" href="lobby.html">AuraPlay</a>
+    <div class="barra-superior__usuario">
+      <span>Aura: 1.000</span>
+      <span class="barra-superior__avatar">J</span>
+    </div>
+  </header>
+
+  <nav class="navegacion">
+    <a class="navegacion__enlace navegacion__enlace--activo" href="lobby.html">Lobby</a>
+    <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+    <a class="navegacion__enlace" href="personaje.html">Personaje</a>
+    <a class="navegacion__enlace" href="configuracion.html">Configuración</a>
+  </nav>
+
+  <main class="pagina__contenido">
+    <section class="perfil">
+      <div class="perfil__personaje">Personaje</div>
+      <div>
+        <h1>Hola, Jugador</h1>
+        <p>Elige un reto y consigue más aura.</p>
+        <button class="boton" type="button">Reclamar bonus diario: 100 aura</button>
+      </div>
+    </section>
+
+    <h2>Minijuegos</h2>
+    <div class="juegos__lista">
+      <div class="tarjeta">
+        <h3>Memoria visual</h3>
+        <p>Encuentra todas las parejas antes de que se acabe el tiempo.</p>
+        <button class="boton boton--principal" type="button">Jugar</button>
+      </div>
+      <div class="tarjeta tarjeta--bloqueada">
+        <h3>Preguntas relámpago</h3>
+        <p>Próximamente</p>
+        <button class="boton" type="button" disabled>Próximamente</button>
+      </div>
+      <div class="tarjeta tarjeta--bloqueada">
+        <h3>Salto de nubes</h3>
+        <p>Próximamente</p>
+        <button class="boton" type="button" disabled>Próximamente</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

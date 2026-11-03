@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraPlay | Configuración</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina">
+  <header class="barra-superior">
+    <a class="barra-superior__logo" href="lobby.html">AuraPlay</a>
+    <div class="barra-superior__usuario">
+      <span>Aura: 1.000</span>
+      <span class="barra-superior__avatar">J</span>
+    </div>
+  </header>
+
+  <nav class="navegacion">
+    <a class="navegacion__enlace" href="lobby.html">Lobby</a>
+    <a class="navegacion__enlace" href="tienda.html">Tienda</a>
+    <a class="navegacion__enlace" href="personaje.html">Personaje</a>
+    <a class="navegacion__enlace navegacion__enlace--activo" href="configuracion.html">Configuración</a>
+  </nav>
+
+  <main class="pagina__contenido">
+    <h1>Configuración</h1>
+
+    <form class="ajuste formulario" action="configuracion.html" method="post">
+      <h2>Apodo</h2>
+      <label for="apodo">Apodo actual</label>
+      <input class="formulario__campo" id="apodo" name="apodo" type="text" value="Jugador" required>
+      <button class="boton boton--principal" type="submit">Guardar apodo</button>
+    </form>
+
+    <form class="ajuste formulario" action="configuracion.html" method="post">
+      <h2>Sonido</h2>
+      <label class="formulario__opcion" for="sonido-si">
+        <input id="sonido-si" name="sonido" type="radio" value="si" checked> Sí
+      </label>
+      <label class="formulario__opcion" for="sonido-no">
+        <input id="sonido-no" name="sonido" type="radio" value="no"> No
+      </label>
+      <button class="boton boton--principal" type="submit">Guardar sonido</button>
+    </form>
+
+    <section class="ajuste ajuste--peligroso">
+      <h2>Sesión y cuenta</h2>
+      <form class="formulario" action="index.html" method="post">
+        <button class="boton boton--info" type="submit">Cerrar sesión</button>
+      </form>
+      <form class="formulario" action="index.html" method="post">
+        <button class="boton boton--alerta" type="submit">Eliminar cuenta</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
