@@ -4,59 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AuraPlay | Tienda</title>
-  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="pagina">
-  <header class="topbar">
-    <a class="mi-logo" href="lobby.html">AuraPlay</a>
-    <div class="user-box">
+<body class="bg-[#FFE9A9] text-[#222222] min-h-screen">
+  <header class="bg-[#FFCB56] border-b border-[#222222] p-3 flex justify-between items-center">
+    <a class="text-2xl font-bold" href="lobby.html">AuraPlay</a>
+    <div class="flex items-center gap-2.5">
       <span>Aura: 1.000</span>
-      <div class="avatar-circulo" aria-label="Avatar de usuario">J</div>
+      <div class="w-8 h-8 bg-[#73A5CA] border border-[#222222] flex items-center justify-center font-bold">J</div>
     </div>
   </header>
 
-  <nav class="menu-navegacion" aria-label="Navegación principal">
-    <a class="nav-btn" href="lobby.html">Lobby</a>
-    <a class="nav-btn activo" href="tienda.html">Tienda</a>
-    <a class="nav-btn" href="personaje.html">Personaje</a>
-    <a class="nav-btn" href="configuracion.html">Configuración</a>
+  <nav class="bg-[#FFCB56] border-b border-[#222222] p-3 flex flex-wrap gap-2.5">
+    <a class="bg-[#FF933E] border border-[#222222] px-3 py-2" href="lobby.html">Lobby</a>
+    <a class="bg-[#73A5CA] border border-[#222222] px-3 py-2 font-bold" href="tienda.html">Tienda</a>
+    <a class="bg-[#FF933E] border border-[#222222] px-3 py-2" href="personaje.html">Personaje</a>
+    <a class="bg-[#FF933E] border border-[#222222] px-3 py-2" href="configuracion.html">Configuración</a>
   </nav>
 
-  <main class="contenedor-principal">
-    <section>
-      <h1>Tienda</h1>
-      <p>Usa tu aura para personalizar tu personaje.</p>
-      <div class="grid-tienda">
-        <article class="card-item">
-          <div class="preview-item">Cabeza</div>
-          <h2>Gorra de explorador</h2>
-          <p>Nivel 1</p>
-          <p>150 aura</p>
-          <button class="btn-azul" type="button">Comprar</button>
-        </article>
-        <article class="card-item">
-          <div class="preview-item">Cuerpo</div>
-          <h2>Sudadera violeta</h2>
-          <p>Nivel 2</p>
-          <p>300 aura</p>
-          <button class="btn-azul" type="button">Comprar</button>
-        </article>
-        <article class="card-item">
-          <div class="preview-item">Calzado</div>
-          <h2>Zapatillas nube</h2>
-          <p>Nivel 3</p>
-          <p>450 aura</p>
-          <button class="btn-azul" type="button">Comprar</button>
-        </article>
-        <article class="card-item">
-          <div class="preview-item">Accesorio</div>
-          <h2>Mochila estelar</h2>
-          <p>Nivel 4</p>
-          <p>600 aura</p>
-          <button class="btn-azul" type="button">Comprar</button>
-        </article>
-      </div>
-    </section>
+  <main class="w-[90%] max-w-[1000px] mx-auto my-5">
+    <h1 class="text-2xl font-bold">Tienda</h1>
+    <p class="mb-4">Usa tu aura para personalizar tu personaje.</p>
+
+    <div class="flex flex-wrap gap-2.5 items-stretch mb-5">
+      <article class="flex-1 min-w-[200px] bg-[#FFCB56] border border-[#222222] p-4">
+        <div class="w-full h-[120px] bg-[#73A5CA] border border-[#222222] flex items-center justify-center mb-2">Cabeza</div>
+        <h2 class="text-lg font-bold">Gorra de explorador</h2>
+        <p>Nivel 1</p>
+        <p>150 aura</p>
+        <button class="bg-[#73A5CA] border border-[#222222] px-3 py-2 mt-2 w-full" type="button">Comprar</button>
+      </article>
+
+      <article class="flex-1 min-w-[200px] bg-[#FFCB56] border border-[#222222] p-4">
+        <div class="w-full h-[120px] bg-[#73A5CA] border border-[#222222] flex items-center justify-center mb-2">Cuerpo</div>
+        <h2 class="text-lg font-bold">Sudadera violeta</h2>
+        <p>Nivel 2</p>
+        <p>300 aura</p>
+        <button class="bg-[#73A5CA] border border-[#222222] px-3 py-2 mt-2 w-full" type="button">Comprar</button>
+      </article>
+
+      <article class="flex-1 min-w-[200px] bg-[#FFCB56] border border-[#222222] p-4">
+        <div class="w-full h-[120px] bg-[#73A5CA] border border-[#222222] flex items-center justify-center mb-2">Calzado</div>
+        <h2 class="text-lg font-bold">Zapatillas nube</h2>
+        <p>Nivel 3</p>
+        <p>450 aura</p>
+        <button class="bg-[#73A5CA] border border-[#222222] px-3 py-2 mt-2 w-full" type="button">Comprar</button>
+      </article>
+
+      <article class="flex-1 min-w-[200px] bg-[#FFCB56] border border-[#222222] p-4">
+        <div class="w-full h-[120px] bg-[#73A5CA] border border-[#222222] flex items-center justify-center mb-2">Accesorio</div>
+        <h2 class="text-lg font-bold">Mochila estelar</h2>
+        <p>Nivel 4</p>
+        <p>600 aura</p>
+        <button class="bg-[#73A5CA] border border-[#222222] px-3 py-2 mt-2 w-full" type="button">Comprar</button>
+      </article>
+    </div>
   </main>
 </body>
 </html>
