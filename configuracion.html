@@ -7,50 +7,51 @@
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body class="pagina">
-  <header class="barra-superior">
-    <a class="barra-superior__logo" href="lobby.html">AuraPlay</a>
-    <div class="barra-superior__usuario">
+  <header class="topbar">
+    <a class="mi-logo" href="lobby.html">AuraPlay</a>
+    <div class="user-box">
       <span>Aura: 1.000</span>
-      <span class="barra-superior__avatar">J</span>
+      <div class="avatar-circulo" aria-label="Avatar de usuario">J</div>
     </div>
   </header>
 
-  <nav class="navegacion">
-    <a class="navegacion__enlace" href="lobby.html">Lobby</a>
-    <a class="navegacion__enlace" href="tienda.html">Tienda</a>
-    <a class="navegacion__enlace" href="personaje.html">Personaje</a>
-    <a class="navegacion__enlace navegacion__enlace--activo" href="configuracion.html">Configuración</a>
+  <nav class="menu-navegacion" aria-label="Navegación principal">
+    <a class="nav-btn" href="lobby.html">Lobby</a>
+    <a class="nav-btn" href="tienda.html">Tienda</a>
+    <a class="nav-btn" href="personaje.html">Personaje</a>
+    <a class="nav-btn activo" href="configuracion.html">Configuración</a>
   </nav>
 
-  <main class="pagina__contenido">
+  <main class="contenedor-principal">
     <h1>Configuración</h1>
 
-    <form class="ajuste formulario" action="configuracion.html" method="post">
+    <section class="caja-ajuste">
       <h2>Apodo</h2>
-      <label for="apodo">Apodo actual</label>
-      <input class="formulario__campo" id="apodo" name="apodo" type="text" value="Jugador" required>
-      <button class="boton boton--principal" type="submit">Guardar apodo</button>
-    </form>
+      <form action="configuracion.html" method="get">
+        <label for="apodo-cfg">Apodo actual</label>
+        <input class="campo-texto" id="apodo-cfg" name="apodo" type="text" value="Jugador" minlength="3" maxlength="16" required>
+        <button class="btn-azul" type="submit">Guardar apodo</button>
+      </form>
+    </section>
 
-    <form class="ajuste formulario" action="configuracion.html" method="post">
+    <section class="caja-ajuste">
       <h2>Sonido</h2>
-      <label class="formulario__opcion" for="sonido-si">
-        <input id="sonido-si" name="sonido" type="radio" value="si" checked> Sí
-      </label>
-      <label class="formulario__opcion" for="sonido-no">
-        <input id="sonido-no" name="sonido" type="radio" value="no"> No
-      </label>
-      <button class="boton boton--principal" type="submit">Guardar sonido</button>
-    </form>
+      <form action="configuracion.html" method="get">
+        <fieldset class="grupo-opciones">
+          <legend>Efectos de sonido</legend>
+          <label><input type="radio" name="sonido" value="si" checked> Sí</label>
+          <label><input type="radio" name="sonido" value="no"> No</label>
+        </fieldset>
+        <button class="btn-azul" type="submit">Guardar ajustes</button>
+      </form>
+    </section>
 
-    <section class="ajuste ajuste--peligroso">
+    <section class="caja-ajuste caja-alerta">
       <h2>Sesión y cuenta</h2>
-      <form class="formulario" action="index.html" method="post">
-        <button class="boton boton--info" type="submit">Cerrar sesión</button>
-      </form>
-      <form class="formulario" action="index.html" method="post">
-        <button class="boton boton--alerta" type="submit">Eliminar cuenta</button>
-      </form>
+      <div class="grupo-botones">
+        <a class="btn-info" href="index.html">Cerrar sesión</a>
+        <a class="btn-rojo" href="index.html">Eliminar cuenta</a>
+      </div>
     </section>
   </main>
 </body>
